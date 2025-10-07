@@ -189,6 +189,12 @@
 	<haxedef name="USE_ADAPTED_ASSETS" if="USE_ADAPTED_ASSETS" />
 	<haxedef name="openfl_dpi_aware" if="openfl_dpi_aware" />
 
+	<haxedef name="FM_ENGINE" value="CODENAME"/>
+	<haxedef name="FM_ENGINE_VERSION" value=""/>
+
+	<haxelib name="funkin-modchart" />
+	<haxeflag name="--macro" value="modchart.backend.macros.Macro.includeFiles()"/>
+
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
