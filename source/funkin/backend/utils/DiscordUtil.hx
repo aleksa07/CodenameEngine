@@ -86,9 +86,9 @@ final class DiscordUtil
 		if (config == null)
 			config = {};
 
-		config.logoKey = config.logoKey.getDefault(Flags.DEFAULT_DISCORD_LOGO_KEY);
-		config.logoText = config.logoText.getDefault(Flags.DEFAULT_DISCORD_LOGO_TEXT);
-		config.clientID = config.clientID.getDefault(Flags.DEFAULT_DISCORD_CLIENT_ID);
+		config.logoKey =  "https://media1.tenor.com/m/Q555g-Ez0KYAAAAC/boykisser-kisser-of-boys.gif"; //config.logoKey.getDefault(Flags.DEFAULT_DISCORD_LOGO_KEY);
+		config.logoText = "Crackhosue entertainment"; //config.logoText.getDefault(Flags.DEFAULT_DISCORD_LOGO_TEXT);
+		config.clientID =  "1424864194871693322"; //config.clientID.getDefault(Flags.DEFAULT_DISCORD_CLIENT_ID);
 		
 		if (Flags.MOD_DISCORD_CLIENT_ID.length > 0) config.clientID = Flags.MOD_DISCORD_CLIENT_ID;
 		if (Flags.MOD_DISCORD_LOGO_KEY.length > 0) config.logoKey = Flags.MOD_DISCORD_LOGO_KEY;

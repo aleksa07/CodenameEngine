@@ -64,7 +64,7 @@ class Flags {
 	public static var VIDEO_EXT:String = "mp4";
 	public static var IMAGE_EXT:String = "png"; // we also support jpg
 
-	public static var DEFAULT_DISCORD_LOGO_KEY:String = "icon";
+	public static var DEFAULT_DISCORD_LOGO_KEY:String = "https://tenor.com/view/boykisser-kisser-of-boys-boy-kisser-i-know-what-you-are-i-do-know-what-you-are-gif-4872465454187401382";
 	public static var DEFAULT_DISCORD_CLIENT_ID:String = "1383853614589673472";
 	public static var DEFAULT_DISCORD_LOGO_TEXT:String = "Codename Engine";
 
