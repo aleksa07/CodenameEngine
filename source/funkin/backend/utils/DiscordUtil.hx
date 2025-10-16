@@ -70,6 +70,10 @@ final class DiscordUtil
 		#end
 	}
 
+	private static function getRandomItem<T>(list:Array<T>):T {
+		return list[FlxG.random.int(0, list.length - 1)];
+	}
+
 	public static function reloadJsonData()
 	{
 		#if DISCORD_RPC
@@ -86,7 +90,36 @@ final class DiscordUtil
 		if (config == null)
 			config = {};
 
-		config.logoKey =  "https://media1.tenor.com/m/eysgXImc5UIAAAAd/bunny-massage.gif"; //config.logoKey.getDefault(Flags.DEFAULT_DISCORD_LOGO_KEY);
+		var imageList = [
+			"https://media1.tenor.com/m/eysgXImc5UIAAAAd/bunny-massage.gif",
+			"https://media1.tenor.com/m/FEc4BKiT-xEAAAAd/niko-niko-oneshot.gif",
+			"https://pbs.twimg.com/media/G3MUx5UWUAAPGfG.jpg?name=orig",
+			"https://media1.tenor.com/m/YSeOEZyjTvAAAAAd/cat-kitty.gif",
+			"https://media1.tenor.com/m/q717g-QUSkkAAAAC/quzi-quzirell.gif",
+			"https://media1.tenor.com/m/kLqdKL3nwgMAAAAd/geo-gwain-saga.gif",
+			"https://media1.tenor.com/m/_9Z23UlVEisAAAAC/gwain-saga-ami-geo-sleep-006.gif",
+			"https://media1.tenor.com/m/QdgnfvJFqcoAAAAd/pvz-peashooter.gif",
+			"https://media1.tenor.com/m/qj-D4ZhPvRMAAAAd/pvz-plants-vs-zombies.gif",
+			"https://media1.tenor.com/m/dYUrJ54ZxUcAAAAd/potemkin-busting.gif",
+			"https://files.catbox.moe/08hsjd.gif",
+			"https://files.catbox.moe/mzcitm.gif",
+			"https://media1.tenor.com/m/PB8CPa7rPzUAAAAd/moss-balls-moss.gif",
+			"https://media1.tenor.com/m/I6CeVqhPWi8AAAAC/off-off-game.gif",
+			"https://media1.tenor.com/m/tAdPSERLpUwAAAAd/roblox-furry.gif",
+			"https://media1.tenor.com/m/yXYSQLVdqcsAAAAd/cat-cord.gif",
+			"https://media1.tenor.com/m/1PSG47FbtBMAAAAd/rain-world-rain-world-watcher.gif",
+			"https://media1.tenor.com/m/Bz_uOARgYRIAAAAd/markiplier-keys.gif",
+			"https://media1.tenor.com/m/fRAEdcwvZigAAAAC/absolute-cinema-ena.gif",
+			"https://cdn.discordapp.com/emojis/772414207479382016.webp?size=96&animated=true",
+			"https://media1.tenor.com/m/tS1NvL2ExuoAAAAd/ninomae-inanis-takodachi.gif",
+			"https://cdn.discordapp.com/emojis/1387443582985568410.webp?size=96",
+			"https://cdn.discordapp.com/emojis/1387439596454805577.webp?size=96",
+			"https://files.catbox.moe/ck8p3u.gif"
+
+
+		];
+
+		config.logoKey = getRandomItem(imageList); //config.logoKey.getDefault(Flags.DEFAULT_DISCORD_LOGO_KEY);
 		config.logoText = "Crackhosue entertainment"; //config.logoText.getDefault(Flags.DEFAULT_DISCORD_LOGO_TEXT);
 		config.clientID =  "1424864194871693322"; //config.clientID.getDefault(Flags.DEFAULT_DISCORD_CLIENT_ID);
 		
